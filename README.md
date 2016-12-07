@@ -5,3 +5,5 @@ There are 1 example code in this SDK :
 
 1. **API Sign In**
    It is the API to sign into T-MONEY environment, every activity in our APIs should be started with Sign In
+
+It still shows error when compiling, so debugging is needed before it can run properly
