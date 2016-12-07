@@ -13,7 +13,7 @@ int main() {
   	struct curl_slist *headers = NULL;
 	headers = curl_slist_append(headers, "Accept: application/json");
 	headers = curl_slist_append(headers, "Content-Type: application/x-www-form-urlencoded");
-	headers = curl_slist_append(headers, "Authorization: Bearer 3e60e5d18c9a83b4c4d89961aaf8f25c");
+	headers = curl_slist_append(headers, "Authorization: Bearer _SET_IT_WITH_YOUR_OWN_KEY_");
  
   	curl = curl_easy_init();
   	
@@ -21,7 +21,7 @@ int main() {
 	    curl_easy_setopt(curl, CURLOPT_URL, "https://api.mainapi.net/tmoney/1.0.0/sign-in");
 	    curl_easy_setopt(curl, CURLOPT_HEADER, headers);
 	    curl_easy_setopt(curl, CURLOPT_POST, 1);
-	    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "userName=tmoney.testing1@gmail.com&password=T3lkom2016&terminal=WEB-TMONEY");
+	    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "userName=YOUR_OWN_EMAIL&password=YOU_OWN_PASSWORD&terminal=ASKED_TO_INSTRUCTOR");
  
     	response = curl_easy_perform(curl);
     
